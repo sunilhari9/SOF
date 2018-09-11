@@ -1,0 +1,1 @@
+sonar-scanner.bat -Dsonar.projectKey=sof -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.login=961ed20efa1e8085501129d61ccb1ce8cd648dd3

@@ -1,0 +1,37 @@
+<!--<a [routerLink]="/landing/356565/enquiry/kmurali"><b>Landing Page</b></a>
+<router-outlet></router-outlet>-->
+<div class="container-fluid mainPage graybar-header">
+    <div class="row ">
+        <div class="col-4">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logo.png" class="graybar-logo"></a>
+        </div>
+        <span class="col-4 headerData">
+            Document Number : {{documentNumber}}
+        </span>
+        <span class="col-4 headerData pull-right">
+            <b>{{customername}} {{shipTo}}#</b>
+        </span>
+    </div>
+ 
+
+</div>
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-header">Line items Selection Criteria</div>
+        <div class="card-body">
+            <div class="" id="checkList">
+                <div class="row ">
+                    <div class="col-6 checkboxContent" *ngFor="let item of checkBoxOptions | keyvalue">
+                        <label class="container"> {{ item.value }}
+        <input type="checkbox" value="{{ item.key}}">
+        <span class="checkmark"></span>
+      </label>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
